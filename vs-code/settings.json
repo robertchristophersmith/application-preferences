@@ -1,0 +1,357 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "editor.autoClosingBrackets": "always",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 1.5,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
+    "prettier.printWidth": 200,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.documentSelectors": [
+        "*.env"
+    ],
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma",
+        "editor.tabSize": 4
+    },
+    "json.format.enable": true,
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.format.enable": true,
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "javascript.format.semicolons": "insert",
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "javascript.preferences.quoteStyle": "single",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            // Green #6bb66c"
+            {
+                "scope": [
+                    "string",
+                    "string.interpolated",
+                    "string.other",
+                    "string.quoted",
+                    "string.quoted.double",
+                    "string.quoted.other",
+                    "string.quoted.single",
+                    "string.quoted.triple",
+                    "string.regexp",
+                    "string.unquoted",
+                    "string.regexp constant",
+                    "string.regexp keyword.other",
+                    "string.regexp keyword.control",
+                    "string.regexp punctuation"
+                ],
+                "settings": {
+                    "foreground": "#6bb66c"
+                }
+            },
+            // Cyan #9edce4
+            {
+                "scope": [
+                    "keyword",
+                    "keyword.control",
+                    "keyword.operator.new",
+                    "keyword.other",
+                    "keyword.control.export",
+                    "keyword.control.import",
+                    "keyword.control.flow",
+                    "storage.modifier.async",
+                    "keyword.other.special-method.dockerfile"
+                ],
+                "settings": {
+                    "foreground": "#9edce4"
+                }
+            },
+            // Standard Blue #6cb6ff
+            {
+                "scope": [
+                    "storage",
+                    "storage.type",
+                    "variable.language.this",
+                    "punctuation.decorator",
+                    "support.type.builtin",
+                    "meta.method.declaration meta.var.expr storage.type",
+                    "support.type.primitive.ts",
+                    "meta.type.annotation support.type.primitive.ts",
+                    "keyword.operator.expression.typeof",
+                    "entity.name.type",
+                    "entity.name.function",
+                    "meta.return.type",
+                    "support.type.primitive"
+                ],
+                "settings": {
+                    "foreground": "#6cb6ff"
+                }
+            },
+            // Purple #986ee2 (also Italic)
+            // Methods
+            {
+                "scope": [
+                    "meta.definition.method",
+                    "entity.name.function meta.definition.method",
+                    "meta.method.declaration storage.type",
+                    "meta.method.declaration storage.type",
+                    "meta.definition.method entity.name.function"
+                ],
+                "settings": {
+                    "foreground": "#b498e4"
+                }
+            },
+            // Darker yellow
+            // Parameters
+            {
+                "scope": [
+                    "variable.parameter"
+                ],
+                "settings": {
+                    "foreground": "#f7c147",
+                    "fontStyle": ""
+                }
+            },
+            // Yellow #F0EB8E
+            // Variables, lets, consts
+            {
+                "scope": [
+                    "variable",
+                    "variable.language",
+                    "variable.name",
+                    "variable.other",
+                    "variable.other.readwrite",
+                    "constant",
+                    "variable.other.constant",
+                    "support.variable.property.importmeta",
+                    "support.constant.constant",
+                    "entity.name.type.class",
+                    "entity.other.inherited-class",
+                    "entity.name.type.model.prisma",
+                    "entity.name.type.enum.prisma",
+                    "source.dockerfile"
+                ],
+                "settings": {
+                    "foreground": "#fbe090"
+                }
+            },
+            // Red #f47067
+            // Numbers, Booleans
+            {
+                "scope": [
+                    "constant.numeric",
+                    "constant.language.boolean.true",
+                    "constant.language.boolean.false",
+                    "constant.language.boolean",
+                    "constant.language.env",
+                    "constant.language.json.comments"
+                ],
+                "settings": {
+                    "foreground": "#f47067"
+                }
+            },
+            // Lime #CAE682
+            // Interfaces
+            {
+                "scope": [
+                    "entity.name.type.interface"
+                ],
+                "settings": {
+                    "foreground": "#aedd88"
+                }
+            },
+            // Orange #f69d50
+            //
+            {
+                "scope": [
+                    "variable.other.property",
+                    "variable.object.property",
+                    "support.type.property-name.json",
+                    "support.type.property-name.json punctuation",
+                    "meta.object-literal.key.ts",
+                    "support.type.primitive.prisma"
+                ],
+                "settings": {
+                    "foreground": "#dd985c"
+                }
+            },
+            // White
+            // punctuation overrides
+            {
+                "scope": [
+                    "punctuation.definition.tag.prisma",
+                    "keyword.operator",
+                    "keyword.operator.optional",
+                    "keyword.operator.assignment",
+                    "meta.class punctuation",
+                    "meta.class meta.decorator",
+                    "meta.class meta.brace.round",
+                    "meta.arrow storage.type.function.arrow"
+                ],
+                "settings": {
+                    "foreground": "#bbbbbb",
+                    "fontStyle": ""
+                }
+            },
+            // Gray #7F848E italic
+            // Used for Comments and documentation
+            {
+                "scope": [
+                    "comment",
+                    "comment.block",
+                    "comment.block.documentation",
+                    "storage.type.class.jsdoc",
+                    "comment.block.documentation",
+                    "entity.name.type.instancec"
+                ],
+                "settings": {
+                    "foreground": "#7F848E",
+                    "fontStyle": "italic"
+                }
+            },
+            // Italic
+            {
+                "scope": [
+                    "entity.name.type.ts meta.type.annotation.ts meta.parameters.ts",
+                    "meta.return.type.arrow.ts",
+                    "meta.return.type.ts",
+                    "meta.type.parameters.ts",
+                    "meta.type.annotation.ts",
+                    "entity.name.type.interface.ts meta.type.annotation.ts",
+                    "entity.name.type.interface.ts meta.return.type.ts meta.method.declaration.ts",
+                    "string.regexp",
+                    "keyword.control.export",
+                    "keyword.control.import",
+                    "keyword.control.flow",
+                    "storage.modifier.async",
+                    "entity.name.type",
+                    "entity.name.function",
+                    "meta.return.type",
+                    "support.type.primitive",
+                    "meta.definition.method",
+                    "entity.name.function meta.definition.method",
+                    "meta.method.declaration storage.type",
+                    "meta.method.declaration storage.type",
+                    "meta.definition.method entity.name.function"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            //Bold
+            {
+                "scope": [
+                    "entity.name.type.class",
+                    "entity.other.inherited-class",
+                    "entity.name.type.model.prisma",
+                    "entity.name.type.enum.prisma"
+                ],
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            }
+        ]
+    },
+    "editor.semanticHighlighting.enabled": true,
+    // Overrides editor semantic token color and styles from the currently selected color theme.
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "[Default Dark Modern]": {
+            "rules": {
+                //  "*.declaration": { "bold": true },
+                "type.readonly": {
+                    "foreground": "#fbe090"
+                },
+                "namespace": {
+                    "foreground": "#6cb6ff",
+                    "bold": false
+                }, // For identifiers that declare or reference a namespace, module, or package.
+                "class": {
+                    "foreground": "#fbe090",
+                    "underline": false
+                }, // For identifiers that declare or reference a class type.
+                "enum": {
+                    "foreground": "#6cb6ff"
+                }, // For identifiers that declare or reference an enumeration type.
+                "interface": {
+                    "foreground": "#aedd88"
+                }, // 	For identifiers that declare or reference an interface type.
+                "typeParameter": {
+                    "foreground": "#6cb6ff"
+                }, // 	For identifiers that declare or reference a type parameter.
+                // "type": { "foreground": "#6cb6ff", "italic": true }, // 	For identifiers that declare or reference a type that is not covered above.
+                "parameter": {
+                    "foreground": "#f7c147",
+                    "italic": false
+                }, // 	For identifiers that declare or reference a function or method parameters.
+                "variable": {
+                    "foreground": "#fbe090"
+                }, // 	For identifiers that declare or reference a local or global variable.
+                "property": {
+                    "foreground": "#dd985c"
+                }, // 	For identifiers that declare or reference a member property, member field, or member variable.
+                // "decorator": { "foreground": "#ff0000", "bold": true }, // 	For identifiers that declare or reference decorators and annotations.
+                // "event": { "foreground": "#ff0000" }, // 	For identifiers that declare an event property.
+                "function": {
+                    "foreground": "#6cb6ff",
+                    "italic": true
+                }, // 	For identifiers that declare a function.
+                "method": {
+                    "foreground": "#b498e4",
+                    "bold": false,
+                    "italic": true
+                }, // 	For identifiers that declare a member function or method.
+                "label": {
+                    "foreground": "#f0efd0"
+                }, // 	For identifiers that declare a label.
+                "comment": {
+                    "foreground": "#7F848E"
+                }, // 	For tokens that represent a comment.
+                "string": {
+                    "foreground": "#8fe28f"
+                }, // 	For tokens that represent a string literal.
+                "keyword": {
+                    "foreground": "#9edce4"
+                }, // 	For tokens that represent a language keyword.
+                "number": {
+                    "foreground": "#f47067"
+                }, // 	For tokens that represent a number literal.
+                "regexp": {
+                    "foreground": "#6bc46d",
+                    "italic": true
+                }, // 	For tokens that represent a regular expression literal.
+                "operator": {
+                    "foreground": "#bbbbbb",
+                    "bold": true
+                }
+                
+            }
+        }
+    },
+    "npm.enableRunFromFolder": true,
+    "npm.packageManager": "npm",
+    "material-icon-theme.activeIconPack": "nest",
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 1000,
+    "explorer.confirmDragAndDrop": false,
+    "scm.alwaysShowRepositories": true,
+    "debug.javascript.autoAttachFilter": "disabled",
+    "git.autofetch": true,
+    "github.gitAuthentication": false,
+    "git.showPushSuccessNotification": true,
+    "git.requireGitUserConfig": false,
+    "editor.codeLens": false,
+    "git.confirmSync": false,
+    "editor.fontFamily": "MonaLisa, 'Consolas ligaturized v3', Consolas, 'Courier New', monospace",
+    "editor.fontVariations": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    "extensions.webWorker": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.codeActionsOnSave": {
+
+    }
+}
