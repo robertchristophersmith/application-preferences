@@ -1,15 +1,57 @@
 {
-    "workbench.colorTheme": "Default Dark Modern",
+    "debug.javascript.autoAttachFilter": "disabled",
     "editor.autoClosingBrackets": "always",
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 1.5,
-    "editor.detectIndentation": false,
-    "editor.tabSize": 4,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.codeLens": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "MonaLisa, 'Consolas ligaturized v3', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontVariations": false,
     "editor.formatOnSave": false,
-    "prettier.printWidth": 200,
-    "prettier.tabWidth": 4,
+    "editor.lineHeight": 1.5,
+    "editor.tabSize": 4,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    "extensions.webWorker": false,
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 1000,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.requireGitUserConfig": false,
+    "git.showPushSuccessNotification": true,
+    "github.gitAuthentication": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "javascript.format.semicolons": "insert",
+    "javascript.preferences.quoteStyle": "single",
+    "jest.autoRun": "off",
+    "jest.coverageFormatter": "GutterFormatter",
+    "jest.jestCommandLine": "npm run build && node --experimental-vm-modules C:\\Users\\Robert\\Documents\\GitHub\\robertcsmith.me\\robertcsmith.me\\node_modules\\jest\\bin\\jest.js --runInBand --env=C:\\Users\\Robert\\Documents\\GitHub\\robertcsmith.me\\robertcsmith.me\\test\\custom-environment.js",
+    "jest.monitorLongRun": 600000,
+    "jest.rootPath": "C:\\Users\\Robert\\Documents\\GitHub\\robertcsmith.me\\robertcsmith.me\\",
+    "jest.showCoverageOnLoad": true,
+    "json.format.enable": true,
+    "material-icon-theme.activeIconPack": "nest",
+    "npm-intellisense.scanDevDependencies": true,
+    "npm.enableRunFromFolder": true,
+    "npm.packageManager": "npm",
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "prettier.printWidth": 1600,
+    "prettier.quoteProps": "consistent",
     "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "references.preferredLocation": "view",
+    "scm.alwaysShowRepositories": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "typescript.format.enable": true,
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.iconTheme": "material-icon-theme",
     "prettier.documentSelectors": [
         "*.env"
     ],
@@ -17,17 +59,27 @@
         "editor.defaultFormatter": "Prisma.prisma",
         "editor.tabSize": 4
     },
-    "json.format.enable": true,
-    "typescript.preferences.quoteStyle": "single",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "typescript.format.enable": true,
-    "typescript.format.insertSpaceAfterCommaDelimiter": true,
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-    "javascript.format.semicolons": "insert",
-    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-    "javascript.inlayHints.parameterTypes.enabled": true,
-    "javascript.inlayHints.variableTypes.enabled": true,
-    "javascript.preferences.quoteStyle": "single",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "jest.coverageColors": {
+        "covered": "rgba(9, 156, 65, 0.4)",
+        "uncovered": "rgba(255,99,71, 0.2)",
+        "partially-covered": "rgba(255,215,0, 0.2)",
+    },
+    "material-icon-theme.files.associations": {
+        "index.mts": "purescript",
+    },
+    "material-icon-theme.folders.associations": {
+        "filters": "Queue",
+        "dto": "Container",
+        "entities": "Mappings",
+        "exceptions": "Syntax",
+        "interceptors": "Pipe",
+        "static-pages": "Template",
+        "artwork": "Images",
+        "announcements": "Messages",
+    },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             // Green #6bb66c"
@@ -205,7 +257,7 @@
                     "comment.block.documentation",
                     "storage.type.class.jsdoc",
                     "comment.block.documentation",
-                    "entity.name.type.instancec"
+                    "punctuation.definition.comment.ts"
                 ],
                 "settings": {
                     "foreground": "#7F848E",
@@ -255,8 +307,8 @@
             }
         ]
     },
+    // Overrides textmate based color customisations and styles tokens based on their semantics
     "editor.semanticHighlighting.enabled": true,
-    // Overrides editor semantic token color and styles from the currently selected color theme.
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
         "[Default Dark Modern]": {
@@ -308,7 +360,8 @@
                     "foreground": "#f0efd0"
                 }, // 	For identifiers that declare a label.
                 "comment": {
-                    "foreground": "#7F848E"
+                    "foreground": "#7F848E",
+                    "italic": true
                 }, // 	For tokens that represent a comment.
                 "string": {
                     "foreground": "#8fe28f"
@@ -330,28 +383,5 @@
                 
             }
         }
-    },
-    "npm.enableRunFromFolder": true,
-    "npm.packageManager": "npm",
-    "material-icon-theme.activeIconPack": "nest",
-    "files.autoSave": "onFocusChange",
-    "files.autoSaveDelay": 1000,
-    "explorer.confirmDragAndDrop": false,
-    "scm.alwaysShowRepositories": true,
-    "debug.javascript.autoAttachFilter": "disabled",
-    "git.autofetch": true,
-    "github.gitAuthentication": false,
-    "git.showPushSuccessNotification": true,
-    "git.requireGitUserConfig": false,
-    "editor.codeLens": false,
-    "git.confirmSync": false,
-    "editor.fontFamily": "MonaLisa, 'Consolas ligaturized v3', Consolas, 'Courier New', monospace",
-    "editor.fontVariations": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "extensions.closeExtensionDetailsOnViewChange": true,
-    "extensions.webWorker": false,
-    "editor.bracketPairColorization.enabled": false,
-    "editor.codeActionsOnSave": {
-
     }
 }
